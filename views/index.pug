@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  title Tracuu
+  style
+      include index.css
+main.main
+  .container
+    section.wrapper
+      .heading
+        h1.text.text-large Dịch vụ tra cứu điểm thi THPTQG 2021
+      form.form(method='POST' action='http://localhost:3000/')
+        .input-control
+          input.input-field(type='text', name='name', placeholder='Nhập số báo danh')
+        .input-control
+          input.input-submit(type='submit', value='Tra cứu')
+          
+  each hienthi, index in n
+    .wrapper1      
+      |!{hienthi.bangdiem} 
+
+
+    
+    
